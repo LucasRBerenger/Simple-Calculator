@@ -1,0 +1,77 @@
+body {
+    font-family: Arial;
+    background-color: #423b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Calculator style */
+.calculator {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #a9a6a6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style for input */
+input[type="text"] {
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Style for focused input */
+input[type="text"]:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: none;
+}
+
+/* Style for mensage input */
+input[type="text"]::placeholder {
+    font-style: italic;
+    color: #888;
+}
+
+/* Button arrangement */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* All buttons style */
+button {
+    height: 50px;
+    font-size: 1.2em;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Style for hovering */
+button:hover {
+    background-color: #b5b3b3;
+}
+
+/* Little shadow while pressing button */
+button:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+}
